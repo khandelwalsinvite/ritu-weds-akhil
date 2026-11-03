@@ -82,7 +82,7 @@ const WEDDING_CONFIG = {
       ],
       venueHi: "निज निवास",
       addressHi: "पीलसू गोपालगढ़, जिला डीग (राजस्थान) – 321204",
-      mapsUrl: "https://maps.google.com/?q=Gopalgarh+Deeg+Rajasthan",
+      mapsUrl: "https://maps.google.com/?q=27.6602,77.0814",
       calendar: { title: "Ritu & Akhil - Lagn Lekhan & Tel-Haldi", start: "20261119T100000", end: "20261119T130000" }
     },
     {
@@ -96,7 +96,7 @@ const WEDDING_CONFIG = {
       ],
       venueHi: "निज निवास",
       addressHi: "पीलसू गोपालगढ़, जिला डीग (राजस्थान) – 321204",
-      mapsUrl: "https://maps.google.com/?q=Gopalgarh+Deeg+Rajasthan",
+      mapsUrl: "https://maps.google.com/?q=27.6602,77.0814",
       calendar: { title: "Ritu & Akhil - Chaak & Gauri Pujan", start: "20261120T100000", end: "20261120T130000" }
     },
     {
