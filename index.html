@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>शुभ विवाह निमंत्रण | रितु संग अखिल</title>
+  <meta name="description" content="ठा. श्री बाँकेबिहारी जी की असीम अनुकम्पा से, रितु और अखिल के शुभ विवाह समारोह में आप सस्नेह सादर आमंत्रित हैं।">
+  <meta name="author" content="समस्त खण्डेलवाल एवं माली परिवार">
+  <meta name="theme-color" content="#5A1220">
+
+  <!-- Link preview (WhatsApp / Facebook). For best results set og:image to an absolute https URL after deploying. -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khandelwalsinvite.github.io/ritu-weds-akhil/">
+  <meta property="og:title" content="शुभ विवाह निमंत्रण: रितु संग अखिल">
+  <meta property="og:description" content="ठा. श्री बाँकेबिहारी जी की असीम अनुकम्पा से, रितु और अखिल के शुभ विवाह समारोह में आप सस्नेह सादर आमंत्रित हैं।">
+  <meta property="og:image" content="https://khandelwalsinvite.github.io/ritu-weds-akhil/assets/images/couple.jpg">
+  <meta property="og:image:width" content="682">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:site_name" content="रितु संग अखिल – शुभ विवाह निमंत्रण">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+Devanagari:wght@400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Reusable ornaments -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- Lotus divider -->
+      <symbol id="lotus" viewBox="0 0 240 28">
+        <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+          <path d="M16 14H98M142 14H224"/>
+          <path d="M120 3C113 9 113 19 120 25C127 19 127 9 120 3Z" fill="currentColor" fill-opacity=".18"/>
+          <path d="M120 25C111 25 104 20 101 11C109 11 117 16 120 25Z"/>
+          <path d="M120 25C129 25 136 20 139 11C131 11 123 16 120 25Z"/>
+          <path d="M8 14l4-3 4 3-4 3z M224 14l4-3 4 3-4 3z" fill="currentColor"/>
+        </g>
+      </symbol>
+      <!-- Fan-shaped corner flourish (drawn from the top-left corner) -->
+      <symbol id="corner" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+          <path d="M3 13A10 10 0 0 0 13 3"/>
+          <path d="M3 24A21 21 0 0 0 24 3"/>
+          <path d="M3 35A32 32 0 0 0 35 3"/>
+          <circle cx="3" cy="3" r="1.8" fill="currentColor"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <audio id="weddingAudio" loop preload="none"></audio>
+
+  <button id="musicToggleBtn" class="music-toggle" type="button" aria-label="संगीत चलाएँ" hidden>
+    <svg class="ico-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+    <svg class="ico-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m22 9-6 6m0-6 6 6"/></svg>
+  </button>
+
+  <!-- Opening screen -->
+  <div id="openingOverlay" class="opening" hidden>
+    <div class="opening-arch">
+      <p class="mantra" data-text="mantra"></p>
+      <svg class="divider" aria-hidden="true"><use href="#lotus"/></svg>
+      <p class="opening-label">शुभ विवाह निमंत्रण</p>
+      <p class="opening-names"><span data-text="brideName"></span> <i>संग</i> <span data-text="groomName"></span></p>
+      <p class="opening-en">Wedding Invitation</p>
+      <button id="openInvitationBtn" class="btn btn-gold" type="button">निमंत्रण खोलें</button>
+    </div>
+  </div>
+
+  <main class="sheet" id="mainContent">
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="top">
+      <div class="frame" aria-hidden="true">
+        <svg class="corner c-tl"><use href="#corner"/></svg>
+        <svg class="corner c-tr"><use href="#corner"/></svg>
+        <svg class="corner c-bl"><use href="#corner"/></svg>
+        <svg class="corner c-br"><use href="#corner"/></svg>
+      </div>
+
+      <div class="hero-inner">
+        <p class="mantra" data-text="mantra"></p>
+        <p class="blessing" data-text="blessing"></p>
+        <svg class="divider" aria-hidden="true"><use href="#lotus"/></svg>
+
+        <p class="hero-label" data-text="heroLabel"></p>
+        <h1 class="names">
+          <span class="name" data-text="brideName"></span>
+          <span class="sang">संग</span>
+          <span class="name" data-text="groomName"></span>
+        </h1>
+        <p class="names-en"><span data-text="brideNameEn"></span> &amp; <span data-text="groomNameEn"></span></p>
+
+        <div class="hero-date">
+          <span class="hd-main" data-text="dateHi"></span>
+          <span class="hd-en" data-text="dateEn"></span>
+        </div>
+        <p class="hero-place" data-text="place"></p>
+      </div>
+
+      <a class="scroll-cue" href="#invite" aria-label="नीचे देखें">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </header>
+
+    <!-- ============ INVITATION & FAMILIES ============ -->
+    <section class="section invite" id="invite">
+      <p class="host" data-text="hostParents"></p>
+      <p class="lead" data-text="inviteLine"></p>
+
+      <figure class="arch" id="couplePhotoContainer">
+        <img id="couplePhotoImg" src="assets/images/couple.jpg" alt="रितु और अखिल" width="682" height="1024" loading="lazy">
+      </figure>
+
+      <div class="pair">
+        <article class="person">
+          <span class="role">कन्या</span>
+          <h2 class="person-name" id="brideFull"></h2>
+          <p class="rel" id="brideRel"></p>
+          <p class="parents" id="brideParents"></p>
+          <p class="meta" id="brideGrand"></p>
+          <p class="meta" id="brideRes"></p>
+        </article>
+        <span class="pair-sep" aria-hidden="true"><svg><use href="#lotus"/></svg></span>
+        <article class="person">
+          <span class="role">वर</span>
+          <h2 class="person-name" id="groomFull"></h2>
+          <p class="rel" id="groomRel"></p>
+          <p class="parents" id="groomParents"></p>
+          <p class="meta" id="groomRes"></p>
+        </article>
+      </div>
+
+      <blockquote class="shloka" id="shloka"></blockquote>
+    </section>
+
+    <!-- ============ EVENTS ============ -->
+    <section class="section events" id="sectionEvents" aria-labelledby="eventsHeading">
+      <header class="section-head">
+        <p class="eyebrow">Wedding Celebrations</p>
+        <h2 id="eventsHeading">मांगलिक कार्यक्रम</h2>
+        <svg class="divider" aria-hidden="true"><use href="#lotus"/></svg>
+      </header>
+
+      <div id="eventsContainer" class="days"></div>
+
+      <p id="busNote" class="bus-note" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="14" rx="2"/><path d="M4 11h16M7 17v3M17 17v3"/><circle cx="8" cy="14" r=".6" fill="currentColor"/><circle cx="16" cy="14" r=".6" fill="currentColor"/></svg>
+        <span id="busNoteText"></span>
+      </p>
+    </section>
+
+    <!-- ============ COUNTDOWN ============ -->
+    <section class="countdown" id="sectionCountdown" aria-labelledby="cdHeading">
+      <p class="eyebrow">Save the Date</p>
+      <h2 id="cdHeading">शुभ घड़ी की प्रतीक्षा</h2>
+      <div class="cd-grid" role="timer" aria-live="off">
+        <div><b id="cdDays">00</b><span>दिन</span></div>
+        <div><b id="cdHours">00</b><span>घंटे</span></div>
+        <div><b id="cdMinutes">00</b><span>मिनट</span></div>
+        <div><b id="cdSeconds">00</b><span>सेकंड</span></div>
+      </div>
+      <p id="cdDone" class="cd-done" hidden>शुभ विवाह सम्पन्न हुआ — आपके स्नेहाशीष के लिए हार्दिक आभार।</p>
+    </section>
+
+    <!-- ============ FAMILY GREETINGS ============ -->
+    <section class="section greetings" id="sectionGreetings" hidden>
+      <details id="greetDetails">
+        <summary>
+          <span>पारिवारिक स्नेहाशीष</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div id="greetBody" class="greet-body"></div>
+      </details>
+    </section>
+
+    <!-- ============ CLOSING ============ -->
+    <section class="section closing">
+      <svg class="divider" aria-hidden="true"><use href="#lotus"/></svg>
+      <h2 id="closingHeading"></h2>
+      <p class="closing-text" id="closingMessage"></p>
+      <p class="signoff" id="familySignoff"></p>
+
+      <div id="balAagrah" class="bal" hidden>
+        <span class="bal-label">बाल आग्रह</span>
+        <p class="bal-quote" id="balQuote"></p>
+        <p class="bal-kids" id="balKids"></p>
+      </div>
+
+      <div class="actions">
+        <button id="btnShareWhatsapp" class="btn btn-maroon" type="button">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15c-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.8-.22-.09-.39-.13-.55.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.17 0-.44.06-.67.31-.23.25-.86.85-.86 2.05s.88 2.36 1 2.53c.13.17 1.72 2.62 4.16 3.67.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.43-.59 1.64-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.3-.2Z"/></svg>
+          <span>निमंत्रण साझा करें</span>
+        </button>
+        <a id="btnContact" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">परिवार से संपर्क करें</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div id="firms" class="firms"></div>
+      <button id="btnBackToTop" class="to-top" type="button">ऊपर जाएँ ↑</button>
+    </footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Wedding / Vivah / Phere: Sacred Mandap & Agni Kund (Holy Fire) -->
+  <defs>
+    <linearGradient id="fireGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D32F2F"/>
+      <stop offset="60%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#FFEB3B"/>
+    </linearGradient>
+  </defs>
+  <!-- Mandap Arch Top -->
+  <path d="M10 20 C10 12 20 8 32 8 C44 8 54 12 54 20" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" />
+  <path d="M32 4 L32 8" stroke="#D4AF37" stroke-width="2" />
+  <circle cx="32" cy="4" r="2" fill="#D4AF37" />
+  <!-- Mandap Pillars -->
+  <path d="M14 20 L14 54" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" />
+  <path d="M50 20 L50 54" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" />
+  <circle cx="14" cy="22" r="2" fill="#58111A" stroke="#D4AF37" />
+  <circle cx="50" cy="22" r="2" fill="#58111A" stroke="#D4AF37" />
+  
+  <!-- Havan Kund (Sacred Fire Altar Steps) -->
+  <path d="M22 52 L42 52 L40 56 L24 56 Z" fill="#8D4004" stroke="#58111A" stroke-width="1" />
+  <path d="M24 48 L40 48 L38 52 L26 52 Z" fill="#B3541E" stroke="#58111A" stroke-width="1" />
+  
+  <!-- Sacred Fire Flame -->
+  <path d="M32 26 C36 34 40 38 37 46 C34 48 30 48 27 46 C24 38 28 34 32 26 Z" fill="url(#fireGrad)" />
+  <path d="M32 34 C34 38 36 40 34 44 C33 45 31 45 30 44 C28 40 30 38 32 34 Z" fill="#FFF9C4" />
+</svg>
+

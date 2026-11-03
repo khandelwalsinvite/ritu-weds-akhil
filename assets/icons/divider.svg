@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 30" fill="none">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0" />
+      <stop offset="20%" stop-color="#C5A059" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#DFB15B" stop-opacity="1" />
+      <stop offset="80%" stop-color="#C5A059" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Center Diamond / Lotus -->
+  <path d="M150 7 L156 15 L150 23 L144 15 Z" fill="#D4AF37" stroke="#996515" stroke-width="0.8" />
+  <circle cx="150" cy="15" r="2.2" fill="#58111A" />
+  <circle cx="138" cy="15" r="1.8" fill="#D4AF37" />
+  <circle cx="162" cy="15" r="1.8" fill="#D4AF37" />
+  
+  <!-- Flourish Left -->
+  <path d="M142 15 C132 15 125 10 115 12 C105 14 100 20 88 18 C76 16 68 15 40 15 L10 15" stroke="url(#goldGradient)" stroke-width="1.2" stroke-linecap="round" />
+  <path d="M115 12 C118 7 124 8 126 12" stroke="#D4AF37" stroke-width="1" stroke-linecap="round" />
+  <circle cx="121" cy="7" r="1.2" fill="#D4AF37" />
+  <path d="M96 17 C92 21 86 21 84 17" stroke="#D4AF37" stroke-width="1" stroke-linecap="round" />
+  <circle cx="89" cy="22" r="1.2" fill="#D4AF37" />
+
+  <!-- Flourish Right -->
+  <path d="M158 15 C168 15 175 10 185 12 C195 14 200 20 212 18 C224 16 232 15 260 15 L290 15" stroke="url(#goldGradient)" stroke-width="1.2" stroke-linecap="round" />
+  <path d="M185 12 C182 7 176 8 174 12" stroke="#D4AF37" stroke-width="1" stroke-linecap="round" />
+  <circle cx="179" cy="7" r="1.2" fill="#D4AF37" />
+  <path d="M204 17 C208 21 214 21 216 17" stroke="#D4AF37" stroke-width="1" stroke-linecap="round" />
+  <circle cx="211" cy="22" r="1.2" fill="#D4AF37" />
+</svg>
+

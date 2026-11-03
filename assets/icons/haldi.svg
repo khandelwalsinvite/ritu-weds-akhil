@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Haldi Ceremony Icon: Traditional brass bowl with golden turmeric paste & marigold -->
+  <defs>
+    <linearGradient id="haldiGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5A93B"/>
+      <stop offset="100%" stop-color="#C58319"/>
+    </linearGradient>
+    <linearGradient id="yellowPaste" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD23F"/>
+      <stop offset="100%" stop-color="#F29E02"/>
+    </linearGradient>
+  </defs>
+  <!-- Bowl Base -->
+  <path d="M26 50 L38 50 L36 53 L28 53 Z" fill="url(#haldiGold)" />
+  <!-- Bowl Body -->
+  <path d="M12 30 C12 44 21 50 32 50 C43 50 52 44 52 30 Z" fill="url(#haldiGold)" stroke="#9B6814" stroke-width="1.2" />
+  <!-- Bowl Rim -->
+  <ellipse cx="32" cy="30" rx="20" ry="5.5" fill="#FFE58F" stroke="#9B6814" stroke-width="1.2" />
+  <!-- Haldi mound -->
+  <path d="M16 29 C18 20 25 18 32 18 C39 18 46 20 48 29 Z" fill="url(#yellowPaste)" />
+  <!-- Marigold flower blossom on top -->
+  <circle cx="32" cy="18" r="4.5" fill="#E65100" />
+  <circle cx="32" cy="18" r="3" fill="#FF9800" />
+  <circle cx="32" cy="18" r="1.5" fill="#FFEB3B" />
+  <!-- Little decorative dots on bowl -->
+  <circle cx="24" cy="38" r="1.2" fill="#FFE58F" />
+  <circle cx="32" cy="40" r="1.2" fill="#FFE58F" />
+  <circle cx="40" cy="38" r="1.2" fill="#FFE58F" />
+</svg>
+

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="archBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#721C28"/>
+      <stop offset="70%" stop-color="#4E1019"/>
+      <stop offset="100%" stop-color="#380810"/>
+    </radialGradient>
+    <linearGradient id="goldFiligree" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEBA4"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+    <linearGradient id="goldFoil" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="50%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="500" height="500" rx="20" fill="url(#archBg)" />
+  
+  <!-- Mughal Arch Outer Frame -->
+  <path d="M50 470 L50 200 C50 140 120 70 250 40 C380 70 450 140 450 200 L450 470 Z" fill="none" stroke="url(#goldFiligree)" stroke-width="2.5" />
+  <!-- Inner Arch Scallop -->
+  <path d="M65 470 L65 210 C65 160 135 90 250 60 C365 90 435 160 435 210 L435 470 Z" fill="none" stroke="url(#goldFiligree)" stroke-width="1.2" stroke-dasharray="3 3" />
+  
+  <!-- Subtle Mandala in Sky of Arch -->
+  <g transform="translate(250, 140) scale(0.6)" opacity="0.25">
+    <circle cx="0" cy="0" r="40" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+    <circle cx="0" cy="0" r="70" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4 4" fill="none" />
+    <circle cx="0" cy="0" r="95" stroke="#D4AF37" stroke-width="1.2" fill="none" />
+  </g>
+
+  <!-- Stars / Golden Petal Accents -->
+  <circle cx="150" cy="120" r="2" fill="#FFD700" opacity="0.7" />
+  <circle cx="350" cy="120" r="2" fill="#FFD700" opacity="0.7" />
+  <circle cx="110" cy="190" r="1.5" fill="#FFD700" opacity="0.6" />
+  <circle cx="390" cy="190" r="1.5" fill="#FFD700" opacity="0.6" />
+
+  <!-- Couple Silhouettes -->
+  <!-- Groom (Left) -->
+  <g id="groomSilhouette">
+    <!-- Groom Safa / Turban (Royal Pagri) -->
+    <path d="M195 210 C180 200 165 208 160 220 C155 232 165 244 180 248 C175 252 170 262 175 272 C185 278 205 278 215 270 C222 258 220 240 215 230 C220 220 210 212 195 210 Z" fill="#FAF5EE" opacity="0.95" />
+    <!-- Royal Kalgi (Feather brooch on Safa) -->
+    <path d="M165 215 C160 190 172 175 178 185 C176 195 170 205 168 215 Z" fill="url(#goldFoil)" />
+    <circle cx="168" cy="216" r="3.5" fill="#D4AF37" />
+    <circle cx="168" cy="216" r="1.5" fill="#9E1B32" />
+    <!-- Groom Face Profile (Looking right towards bride) -->
+    <path d="M190 240 C198 244 205 248 206 254 C205 258 200 262 198 266 C202 272 198 280 188 285 C182 288 178 295 175 305 L150 315 L145 280 Z" fill="#FAF5EE" opacity="0.9" />
+    <!-- Groom Sherwani / Royal Coat -->
+    <path d="M140 315 C140 315 165 305 185 315 C205 325 220 350 225 385 L225 470 L110 470 L115 365 C118 335 130 320 140 315 Z" fill="#FAF5EE" opacity="0.95" />
+    <!-- Groom Nehru Collar & Royal Stole (Dupatta) -->
+    <path d="M168 312 L172 470" stroke="url(#goldFoil)" stroke-width="3" />
+    <path d="M150 325 C145 360 140 410 145 470" stroke="url(#goldFoil)" stroke-width="5" opacity="0.8" />
+    <!-- Royal Pearl Necklace (Mala) -->
+    <path d="M160 320 C175 350 200 345 205 325" fill="none" stroke="url(#goldFiligree)" stroke-width="2.5" stroke-dasharray="1 3" />
+  </g>
+
+  <!-- Bride (Right) -->
+  <g id="brideSilhouette">
+    <!-- Bride Dupatta Drape over head -->
+    <path d="M285 205 C255 210 240 235 240 265 C240 295 245 330 240 370 C238 395 235 435 230 470 L350 470 C350 430 355 350 345 295 C340 250 325 205 285 205 Z" fill="#FAF5EE" opacity="0.95" />
+    <!-- Golden Border on Dupatta (Kiran / Zari) -->
+    <path d="M285 205 C255 210 240 235 240 265 C240 295 245 330 240 370 C238 395 235 435 230 470" fill="none" stroke="url(#goldFoil)" stroke-width="3.5" />
+    <!-- Maang Tikka & Matha Patti -->
+    <path d="M280 215 C272 225 268 238 270 248" fill="none" stroke="url(#goldFoil)" stroke-width="2" />
+    <circle cx="270" cy="248" r="2.8" fill="url(#goldFoil)" />
+    <!-- Bride Face Profile (Looking left towards groom) -->
+    <path d="M272 245 C264 250 260 256 261 262 C263 266 267 268 266 272 C263 276 265 282 272 286 C276 288 280 294 282 302" fill="#FAF5EE" opacity="0.9" />
+    <!-- Traditional Jhumka (Earring) -->
+    <path d="M285 268 L283 278" stroke="url(#goldFoil)" stroke-width="1.5" />
+    <circle cx="283" cy="280" r="2.5" fill="url(#goldFoil)" />
+    <!-- Royal Bridal Lehenga & Choli -->
+    <path d="M260 315 C280 305 310 315 325 330 C340 350 355 400 360 470 L260 470 Z" fill="#FAF5EE" opacity="0.92" />
+    <!-- Bridal Choker / Polki Necklace -->
+    <path d="M275 300 C285 310 298 308 305 298" fill="none" stroke="url(#goldFoil)" stroke-width="2.5" />
+    <!-- Intricate Zari Embroidery motifs on Lehenga -->
+    <g stroke="url(#goldFiligree)" stroke-width="1.2" opacity="0.75" fill="none">
+      <path d="M270 410 C285 400 300 410 315 400" />
+      <path d="M275 430 C290 420 305 430 320 420" />
+      <path d="M280 450 C295 440 310 450 325 440" />
+    </g>
+  </g>
+
+  <!-- Central Heart / Knot of Eternal Love -->
+  <g transform="translate(237, 340) scale(0.8)">
+    <path d="M16 5 C16 5 13 0 8 0 C3.5 0 0 3.5 0 8 C0 14 8 20 16 26 C24 20 32 14 32 8 C32 3.5 28.5 0 24 0 C19 0 16 5 16 5 Z" fill="url(#goldFoil)" opacity="0.9" />
+  </g>
+
+  <!-- Ornate Bottom Crest -->
+  <path d="M200 470 C220 460 280 460 300 470" stroke="url(#goldFiligree)" stroke-width="2" fill="none" />
+</svg>
+
