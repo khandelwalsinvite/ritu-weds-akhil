@@ -115,7 +115,7 @@
     if (feat.showDirectionsButtons !== false && e.mapsUrl) {
       actions.push(`<a class="chip" href="${esc(e.mapsUrl)}" target="_blank" rel="noopener noreferrer">${ICON_PIN}<span>मार्ग देखें</span></a>`);
     }
-    const cal = feat.showAddToCalendar !== false ? calendarUrl(e) : '';
+    const cal = feat.showAddToCalendar === true ? calendarUrl(e) : '';
     if (cal) actions.push(`<a class="chip" href="${esc(cal)}" target="_blank" rel="noopener noreferrer">${ICON_CAL}<span>कैलेंडर में जोड़ें</span></a>`);
 
     return `

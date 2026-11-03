@@ -187,7 +187,7 @@ const WEDDING_CONFIG = {
     showCouplePhoto: true,
     showCountdown: true,
     showDirectionsButtons: true,
-    showAddToCalendar: true,
+    showAddToCalendar: false,
     showMusicPlayer: true,
     showWhatsAppShare: true,
     showContactButton: true,
