@@ -201,7 +201,7 @@ const WEDDING_CONFIG = {
   developer: {
     show: true,
     titleHi: "डिजिटल पत्रिका निर्माण",
-    titleEn: "Website Designed & Developed",
+    titleEn: "Website Designed & Developed by",
     name: "Lubhit Khandelwal",
     phone: "6378966072",
     phoneDisplay: "+91 63789 66072",

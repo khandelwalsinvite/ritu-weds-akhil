@@ -277,7 +277,7 @@
     setText('devName', dev.name || 'Lubhit Khandelwal');
     const tag = $('devTagline');
     if (tag) {
-      tag.innerHTML = 'Website Designed &amp; Developed with <span class="heart">❤️</span> by';
+      tag.textContent = 'Website Designed & Developed with love by';
     }
 
     const emailEl = $('devEmail');
