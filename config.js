@@ -203,8 +203,8 @@ const WEDDING_CONFIG = {
     titleHi: "डिजिटल पत्रिका निर्माण",
     titleEn: "Website Designed & Developed with ❤️ by",
     name: "Lubhit Khandelwal",
-    phone: "9990709069",
-    phoneDisplay: "+91 99907 09069",
+    phone: "6378966072",
+    phoneDisplay: "+91 63789 66072",
     email: "khandelwallubhit10@gmail.com",
     whatsappMessage: "नमस्ते लुभित! मैंने आपकी बनाई डिजिटल शादी की पत्रिका देखी और मुझे भी एक पत्रिका बनवानी है।"
   }
