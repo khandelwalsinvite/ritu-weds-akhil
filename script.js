@@ -19,6 +19,7 @@
     initOpening();
     initMusic();
     initShareAndContact();
+    initDeveloperCredit();
     $('btnBackToTop')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     initReveal();
   });
@@ -260,6 +261,52 @@
       startMusic();
       setTimeout(() => { overlay.hidden = true; }, 850);
     });
+  }
+
+  /* ---------- developer credit ---------- */
+  function initDeveloperCredit() {
+    const dev = cfg.developer;
+    const container = $('developerCredit');
+    if (!dev || dev.show === false) {
+      if (container) container.hidden = true;
+      return;
+    }
+    if (!container) return;
+    container.hidden = false;
+
+    setText('devName', dev.name || 'Lubhit Khandelwal');
+    if (dev.titleEn) {
+      const tag = $('devTagline');
+      if (tag) tag.innerHTML = `${esc(dev.titleEn)} <span class="heart">❤️</span> by`;
+    }
+
+    const emailEl = $('devEmail');
+    if (emailEl && dev.email) {
+      emailEl.href = 'mailto:' + dev.email;
+      setText('devEmailText', dev.email);
+    } else if (emailEl) {
+      emailEl.hidden = true;
+    }
+
+    const phoneEl = $('devPhone');
+    const waEl = $('devWhatsapp');
+    const cleanPhone = (dev.phone || '').replace(/\D/g, '');
+
+    if (phoneEl && cleanPhone) {
+      const fullPhone = cleanPhone.startsWith('91') ? cleanPhone : '91' + cleanPhone;
+      phoneEl.href = 'tel:+' + fullPhone;
+      setText('devPhoneText', dev.phoneDisplay || ('+' + fullPhone));
+    } else if (phoneEl) {
+      phoneEl.hidden = true;
+    }
+
+    if (waEl && cleanPhone) {
+      const fullPhone = cleanPhone.startsWith('91') ? cleanPhone : '91' + cleanPhone;
+      const waMsg = encodeURIComponent(dev.whatsappMessage || 'नमस्ते लुभित! डिजिटल शादी की पत्रिका के संबंध में संपर्क करना चाहते हैं।');
+      waEl.href = 'https://wa.me/' + fullPhone + '?text=' + waMsg;
+    } else if (waEl) {
+      waEl.hidden = true;
+    }
   }
 
   /* ---------- music (never autoplays; starts only after a tap) ---------- */
