@@ -275,9 +275,9 @@
     container.hidden = false;
 
     setText('devName', dev.name || 'Lubhit Khandelwal');
-    if (dev.titleEn) {
-      const tag = $('devTagline');
-      if (tag) tag.innerHTML = `${esc(dev.titleEn)} <span class="heart">❤️</span> by`;
+    const tag = $('devTagline');
+    if (tag) {
+      tag.innerHTML = 'Website Designed &amp; Developed with <span class="heart">❤️</span> by';
     }
 
     const emailEl = $('devEmail');
